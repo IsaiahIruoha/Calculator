@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo|Rubik:400,400i,700");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #505050;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #d4d4d2;
+}
+
+body {
+  transition: background-color 0.5s ease;
+}
+body:hover {
+  background-color: #e7e3fc;
+}
+
+#shell {
+  min-height: 450px;
+  width: 310px;
+  background-color: #1c1c1c;
+  border-radius: 25px;
+}
+
+#output-box {
+  background-color: #1c1c1c;
+  height: 150px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.display {
+  color: white;
+  text-align: right;
+  font-family: "Rubik", sans-serif;
+  overflow: hidden;
+  resize: none;
+}
+
+#formula {
+  display: flex;
+  justify-content: right;
+  font-size: 2rem;
+  margin-bottom: -5px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+#formula #math {
+  min-width: 0;
+  max-width: 100%;
+  max-height: 50px;
+  vertical-align: top;
+  word-break: break-all;
+  line-height: 1;
+}
+
+#input {
+  font-size: 4rem;
+  margin-right: 20px;
+  display: flex;
+  justify-content: right;
+}
+#input #display {
+  min-width: 0;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+#button-box {
+  margin: -10px 10px 10px 10px;
+}
+
+.rowOne,
+.rowTwo,
+.rowThree,
+.rowFour,
+.rowFive {
+  margin: 0;
+  padding: 0;
+  height: 66px;
+}
+
+.btn {
+  width: 90%;
+  height: 85%;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn-white:hover {
+  color: #1c1c1c;
+}
+
+.btn:active {
+  opacity: 50%;
+  color: #d4d4d2;
+}
+
+.btn-white:active {
+  color: #1c1c1c;
+}
+
+#multiply:focus,
+#subtract:focus,
+#add:focus,
+#divide:focus {
+  background-color: #d4d4d2;
+  color: #ff9500;
+}
+
+.col-6 > .btn {
+  width: 90%;
+  border-radius: 40px;
+}
+
+.btn-white {
+  background-color: #d4d4d2;
+  color: #1c1c1c;
+}
+
+.btn-orange {
+  background-color: #ff9500;
+}
+
+.btn-grey {
+  background-color: #505050;
+}
